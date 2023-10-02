@@ -1,0 +1,18 @@
+* {
+    background-color: #45B29D;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    text-indent: -2.5em;
+}
+
+div {
+    color: #FFFFFF;
+}
+
+h5 {
+    color: #000000;
+}

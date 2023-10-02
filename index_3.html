@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<!-- HEAD -->    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Chatter|App</title>
+        
+        <link rel="stylesheet" href="style_3.css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+
+<!-- BODY -->
+    <body>
+
+    <!-- Section: channel-area -->
+        <section id="channel-area">
+        <!-- Headbar -->
+            <div class="headbar">
+                <img id="logo" src="https://ip.lfe.mw.tum.de/sections/moocus.png" alt="Moocus Logo">
+                <h1 id="app-title">Chatter | App</h1>
+            </div>
+            <a class="fab">+</a>
+        <!-- channel-List -->
+            <h2>Favorites</h2> 
+            <ul class="channel-list">                
+                <li class="selected">
+                    <i class="material-icons">group</i>
+                    <span class="channel-name"> MeetUP </span>
+                    <span class="timestamp"> 11:51 </span> 
+                </li>
+
+                <li> 
+                    <i class="material-icons">group</i>
+                    <span class="channel-name"> Oktoberfest </span> 
+                    <span class="timestamp"> 10:51 </span>
+                </li>         
+            </ul>
+            <h2>Regular</h2>
+            <ul class="channel-list"> 
+                <li>
+                    <i class="material-icons">group</i>
+                    <span class="channel-name"> Weatherchannel </span>
+                    <span class="timestamp"> Yesterday </span> 
+                </li>
+                <li> 
+                    <i class="material-icons">group</i>
+                    <span class="channel-name"> SevenContinents </span> 
+                    <span class="timestamp"> 23th May 2018 </span>
+                </li>         
+            </ul>
+        </section>
+        
+    <!-- Section: chat-area -->   
+        <section id="chat-area">
+        <!-- Headbar -->
+            <div class="headbar">
+                <h1>MeetUP</h1>
+                <!-- <button type="button">Favorite</button> -->
+                <a id="favorite-button" class="material-icons">favorite</a>
+            </div>
+        <!-- message-area -->
+            <div id="message-area">
+                <div class="message in-message">
+                    <div class="message-wrapper"> 
+                        <a class="material-icons">account_circle</a>
+                        <div class="message-content">
+                            <h2>Jessie Pinkman</h2>
+                            <p> Ich brauch Stein <br>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat eveniet porro officia,
+                                nesciunt aut delectus incidunt possimus illum placeat repudiandae reiciendis corporis ab.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="message-time">11:45 </div>
+                </div>
+                <div class="message out-message">
+                    <div class="message-wrapper">
+                        <div class="message-content">
+                            <p> Ich geb dir Stein <br>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat eveniet porro officia,
+                                nesciunt aut delectus incidunt possimus illum placeat repudiandae reiciendis corporis ab.
+                            </p>
+                        </div>
+                        <a class="material-icons">account_circle</a>
+                    </div>
+                    <div class="message-time">11:45</div>
+                </div>
+                <div class="message out-message">
+                    <div class="message-wrapper">
+                        <div class="message-content">
+                            <p> guter Preis <br>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat eveniet porro officia,
+                                nesciunt aut delectus incidunt possimus illum placeat repudiandae reiciendis corporis ab.
+                            </p>
+                        </div>
+                        <a class="material-icons">account_circle</a>
+                    </div>
+                    <div class="message-time">11:46</div>
+                </div>
+                
+                <div class="message out-message">
+                    <div class="message-wrapper">
+                        <div class="message-content">
+                            <p> letzter Preis</p>
+                        </div>
+                        <a class="material-icons">account_circle</a>
+                    </div>
+                    <div class="message-time">11:47</div>
+                </div>
+                <div class="message in-message">
+                    <div class="message-wrapper"> 
+                        <a class="material-icons">account_circle</a>
+                        <div class="message-content">
+                            <h2>Jessie Pinkman</h2>
+                            <p> Ich bin eine Biene <br>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat eveniet porro officia,
+                                nesciunt aut delectus incidunt possimus illum placeat repudiandae reiciendis corporis ab.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="message-time"> 11:49</div>
+                </div>
+                <div class="message in-message">
+                    <div class="message-wrapper"> 
+                        <a class="material-icons">account_circle</a>
+                        <div class="message-content">
+                            <h2>Jessie Pinkman</h2>
+                            <p> Ich bin ein Zug <br>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat eveniet porro officia,
+                                nesciunt aut delectus incidunt possimus illum placeat repudiandae reiciendis corporis ab.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="message-time">11:49</div>
+                </div>
+            </div>
+        <!-- send-area -->
+            <div id="input-area">
+                <i class="material-icons" id="emoticon-button">insert_emoticon</i>
+                <input
+                  type="text"
+                  id="message-input"
+                  name="message-input"
+                  minlength="1"
+                  maxlength="500"
+                  placeholder="... write your message"
+                />
+                <a class="material-icons button" id="send-button">send</a>
+              </div>
+              
+        </section> 
+
+    </body>
+
+
+</html>
