@@ -61,6 +61,7 @@ button {
 }
 #favorite-button {
     line-height: 65px;
+    cursor: pointer;
 }
 .fab {
     width: 44px;
@@ -87,6 +88,10 @@ button {
     width: 399px;
     height: 100vh;
     border-right: 1px solid #888888;
+}
+#channel-list-area {
+    height: calc(100vh - 2 * 65px);
+    overflow-y: auto;
 }
 #channel-area h2 {
     margin: 25px 10px 10px 10px;
@@ -134,11 +139,11 @@ button {
     box-sizing: border-box;
     padding: 15px;
     overflow-y: auto;
-    height: calc(100% - 2 * 65px);
+    height: calc(100vh - 2 * 65px);
     width: 100%;
 }
 .message {
-    width: 75%;
+    max-width: 75%;
     margin: 10px;
 }
 .in-message {
@@ -146,7 +151,6 @@ button {
 }
 .out-message  {
     align-self: flex-end;
-    text-align: right;
 }
 .message-wrapper {
     display: flex;
@@ -166,20 +170,28 @@ button {
     border-radius: 20px 20px 5px 20px;
 }
 .message-content h2 { /* Change to id: transmitter-name */
-    margin: 0px 0px 10px 0px;
+    margin: 0px 0px 5px 0px;
 }
-.message-time {
+.in-message .message-time {
     color: #888888;
     font-size: smaller;
     margin: 2px 35px;
 }
+.out-message .message-time {
+    color: #888888;
+    font-size: smaller;
+    margin: 2px 35px;
+    text-align: end;
+}
 a.material-icons {
     margin: 0px 5px;
+    cursor: pointer;
 }
 
 
 /* Send-Area */
 #input-area {
+    box-sizing: border-box;
     position: fixed;
     bottom: 0px;
     height: 65px;
@@ -200,6 +212,7 @@ a.material-icons {
     color: white;
     text-align: center;
     line-height: 44px;
+    cursor: pointer;
 }
 #message-input {
     height: 44px;
@@ -212,6 +225,7 @@ a.material-icons {
 #send-button {
     color: #00838f;
     margin: 0px 20px;
+    cursor: pointer;
 }
 
 
