@@ -3,10 +3,9 @@ console.log("App is alive");
 // Global Variables
 let currentChannel = channel1; 
 
-
 // Functions
 function switchChannel(newChannel) { 
-    console.log("The new channel is: " + newChannel.name);
+    console.log("The currenty selected channel is: " + newChannel.name);
     document.getElementById(currentChannel.id).classList.remove("selected");
     document.getElementById(newChannel.id).classList.add("selected");
     currentChannel = newChannel; //assignt object(!not object.id)
@@ -31,9 +30,8 @@ function sendMessage() {
                             <span class="timestamp">11:45</span>
                         </div>`;
     document.getElementById('message-area').innerHTML = messageString;
-    document.getElementById('message-input').value = '';
+    document.getElementById('message-input').value = ''; //reset input field
 }
-
 
 // Test_Function
 // console.log("I've reached the Problem");

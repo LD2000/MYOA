@@ -1,0 +1,235 @@
+
+/* Global */
+* {
+    font-family: "Roboto", "Arial", "sans-serif";
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    width: 100%;
+    height: 100%;
+}
+section {
+    position: fixed;
+    top: 0px;
+    height: 100hv;
+}
+/* h1 {
+    color: #00838f;
+    display: inline;
+} */
+h2 {
+    color: #00838f;
+    font-size: smaller;
+} 
+button {
+    color: #ffffff;
+    background-color: #00838f;
+    font-size: larger;
+    text-transform: uppercase;
+    border-color: #ffffff;
+}
+
+
+/* Headbar */
+.headbar {
+    background-color: #eeeeee;
+    color: #00838f;
+    height: 65px;
+    font-size: 12px;
+    padding: 0px 20px;
+    line-height: 65px;
+}
+#chat-area .headbar {
+    display: flex;
+    justify-content: space-between;
+}
+/* .headbar h1{
+    position: absolute;
+    margin: 22px 0px;
+} */
+#logo {
+    position: absolute;
+    margin: 5px;
+    height: 56px; 
+    background-color: #00838f;
+    border-radius: 5px;
+}
+#app-title {
+    position: absolute;
+    margin: 0px 80px;
+}
+#favorite-button {
+    line-height: 65px;
+    cursor: pointer;
+}
+.fab {
+    width: 44px;
+    height: 44px;
+    background-color: #00838f;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px 0 #aaaaaa;
+
+    font-size: 36px;
+    color: white;
+    text-align: center;
+    line-height: 44px;
+
+    position: absolute;
+    top: 44px;
+    right: 22px;
+
+    cursor: pointer;
+}
+
+
+/* Channel-Area */
+#channel-area {
+    width: 399px;
+    height: 100vh;
+    border-right: 1px solid #888888;
+}
+#channel-list-area {
+    height: calc(100vh - 2 * 65px);
+    overflow-y: auto;
+}
+#channel-area h2 {
+    margin: 25px 10px 10px 10px;
+    text-transform: uppercase;
+}
+.channel-list li{  
+    box-sizing: border-box;
+    padding: 22px;
+    height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+/* ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+} */
+.selected {
+    border-right: 5px solid #00838f;
+    background-color: #eeeeee;
+}
+.timestamp {
+    color: #888888;
+    font-size: smaller;
+}
+.channel-name {
+    font-size: 16px;
+    margin: 0px 22px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    flex: 1 1 auto;
+}
+
+
+/* Messages-Area */
+#chat-area {
+    left: 400px;
+    width: calc(100% - 400px);
+}
+#message-area {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 15px;
+    overflow-y: auto;
+    height: calc(100vh - 2 * 65px);
+    width: 100%;
+}
+.message {
+    max-width: 75%;
+    margin: 10px;
+}
+.in-message {
+    align-self: flex-start;
+}
+.out-message  {
+    align-self: flex-end;
+}
+.message-wrapper {
+    display: flex;
+    align-items: flex-end;
+}
+.message-content {
+    padding: 10px;
+    font-size: smaller;
+}
+.in-message .message-content {
+    background-color: #eeeeee;
+    border-radius: 20px 20px 20px 5px;
+}
+.out-message .message-content{
+    background-color: #00838f;
+    color: #ffffff;
+    border-radius: 20px 20px 5px 20px;
+}
+.message-content h2 { /* Change to id: transmitter-name */
+    margin: 0px 0px 5px 0px;
+}
+.in-message .message-time {
+    color: #888888;
+    font-size: smaller;
+    margin: 2px 35px;
+}
+.out-message .message-time {
+    color: #888888;
+    font-size: smaller;
+    margin: 2px 35px;
+    text-align: end;
+}
+a.material-icons {
+    margin: 0px 5px;
+    cursor: pointer;
+}
+
+
+/* Send-Area */
+#input-area {
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 0px;
+    height: 65px;
+    width: calc(100% - 400px);
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #eeeeee;
+    align-items: center;
+}
+#emoticon-button {
+    width: 44px;
+    height: 44px;
+    background-color: #00838f;
+    border-radius: 50%;
+    margin: 0px 20px;
+
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    line-height: 44px;
+    cursor: pointer;
+}
+#message-input {
+    height: 44px;
+    border: 0px solid #000000;
+    border-radius: 10px;
+    text-align: left;
+    padding: 0px 10px;
+    flex: 1 1 80%;
+}
+#send-button {
+    color: #00838f;
+    margin: 0px 20px;
+    cursor: pointer;
+}
+
+
+/* Temp */
+temp {
+    border: 3px solid #000000;
+}

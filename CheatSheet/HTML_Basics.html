@@ -1,0 +1,414 @@
+// HTML BASICS //
+<startTag attribute="value"> content </endTag>
+
+<!DOCTYPE HTML>
+
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> //jQuery
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"> //FontAwesome1
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous"> //FontAwesome2
+    <title> </title>
+    <style> </style>
+  </head>   
+  <body>
+    <h2>B E R L I N</h2>
+    <h1>04.09.2023</h1>
+    <p>Partly cloudy overnight.</p>
+    <p> <strong>19&deg;C</strong> </p>
+    <p> DETAILS </p>
+  </body>
+  <!--this is a comment -->
+</html>
+
+class="unequal --> .unequal {background-color: #64FFEB;}
+id="menu" --> #menu {background-color: #64FFEB;}
+
+// MEDIA //
+<img src="url" alt="..." style="width: 200px; height: 200px">
+
+<video style="width: ...; height: ...;"> 
+	<source src="url" type="...">
+	<source src="url" type="...">
+	...                          
+</video> 
+
+<a href="https://www.tum.de/en/homepage/" target="_blank">Link to tum.de</a>  (_blank or_self)
+<link rel="stylesheet" href="path/name.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+<ul style="list-style-type: none">
+  <li> 1 em </li>
+</ul>
+
+// FORM + INPUT ELEMENTS //
+ <form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+<input type="text"> 
+<input type="checkbox">
+<input type="date">
+<input type="password">
+<input type="submit">
+
+<select>
+  <option value="option1">1</option>
+  <option value="option2">2</option>
+  <option value="option3">3</option>
+</select>
+
+document.getElementById('id_name').value;
+
+
+-------------------------------------------------------------------------------------
+
+
+// STYLE //
+color: white;
+background-color: #45B29D;
+background-color: rgb(50, 50, 50);
+opacity: 0.5; (0.0-1.0)
+
+text-align: center;
+text-transform: uppercase;
+text-transform: none;
+text-shadow: horiz1 verti1 blur1 color1, horiz2 verti2 blur2 color2;
+
+font-family: "Arial Bold", Arial, sans-serif;
+font-size:  xx-large;
+
+
+// BOXES + CONTAINER //
+[contend, padding, border, margin]
+!Margin-Collapse (only vertical margins collapses)
+Width and height properties: it just set the width and height 
+of the content area. To calculate the full size of an element, 
+you must also add padding, borders and margins.
+
+margin: 25px; (all sides)
+margin: auto; (center horizontaly within parent)
+
+selector {
+padding: 0px 5px 5px 10px; (Top,R,Bottom,L)
+padding: 12px 0px; (TopBottom, LR)
+border: 1px solid #000000;
+border-radius: length units or in percent;
+box-sizing: border-box; (padding and border included in width and height:)
+width: 400px;
+height: 100px;
+display: block; (inline or block --> forces <br>)
+box-sizing: border-box (content, padding and border); (or contend-box)
+}
+
+
+// POSITOIN+ALIGNING //
+location properties --> left, top, right, bottom (eg top:50px)
+position: static(default)| fixed(to window pos)| relative (to pos in html)| absolute (to parent pos)| inherit
+align image --> vertical-align: middle;
+overflow: visible(overlap borders)| hiddden(clipped content)| scroll(xANDy-scrollbar)| auto()
+verflow-x, verflow-y
+element has to have a size (width and/or height) for overflow to work
+
+
+// FLEXBOX //
+selector {
+	display: flex;
+	flex-direction: row|row-reverse|column-reverse; 
+	flex-wrap: nowrap|wrap|wrap-reverse;
+	justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly;
+	align-items: stretch | flex-start | flex-end | center | baseline;
+
+}
+
+// PSEUDO-Elements&CLASSES //
+selector::pseudo-element { (before|after|first-letter)
+    font-family: FontAwesome;
+    display: inline-block;
+    padding-right: 6px;
+    vertical-align: middle;
+    content: "\f101";
+} 
+
+selector:pseudo-class {  (active|hover|focus)
+	background-color: darkgrey;
+  	color: white;
+}
+
+// TIPPS //
+Horizontaly center element within parent --> margin: auto;
+center some text and not a whole element --> text-align: center;
+vertically center content within element with no height -->padding: 5px 0px;
+
+
+
+-------------------------------------------------------------------------------------
+
+// JAVA SCRIPT BASICS //
+<script src="js/main.js"></script> //at end of document
+attribute="value.object.subobject = '[somestuff]';"
+onclick
+
+alert() --> displays alert box
+console.log()
+
+document.getElementById('id') ......
+.innerHTML = 'Some content';
+.src = 'img/rain.png';
+
+.style.[CSS/StyleObject property];
+.style.display = 'none'; (none|block)
+
+document.querySelector('Selector|.class|#id') .....
+.style.display = 'none';"
+
+// IN + EXTERNAL JS //
+onclick="updateWeatherHtml()" 
+--> function updateWeatherHtml () {
+	document.getElementById("temperature").innerHTML = '8 °C';
+}
+<script src="js/main.js"></script>
+
+///////////// EXAMPLES /////////////////
+function changeDay(day) {
+  // Change the inner HTML of the date display div
+  $('#datedisplay').html(day); 
+}
+
+function convertWindspeed(speedMs) {
+  return Math.round(speedMs * 3.6);
+};
+function updateWindspeed() {
+ 	$('#winddisplay').html(convertWindspeed(6.4) + '  km/h');
+}
+
+function showTomorrow() {
+  updateWeatherHtml('rain', 'Drizzle in the evening', '8° C', '8 KM/H', '98%', 'Tommorow');
+}
+function updateWeatherHtml(image, summary, temperature, wind, humidity, day) {
+  $('#iconimage').attr('src','img/'+ image+'.png');
+  $('#summary').html(summary);
+  $('#temperature').html(temperature);
+  $('#winddisplay').html(wind);
+  $('#humiditydisplay').html(humidity);
+  $('#datedisplay').html(day);
+  $('button').toggle();
+}
+
+function DisplayInput() {
+  var x = document.getElementById("inputTag").value;
+  document.getElementById("outputTag").innerHTML = x;
+}
+
+document.getElementById(id).style.display = 'none';
+document.querySelector('#my-id').style.backgroundColor = 'red';
+
+// DATE() //
+const d = new Date("2021-03-25");
+d.getFullYear();
+
+<element event="some JavaScript">
+
+
+// OnLoad // 
+document.addEventListener("DOMContentLoaded", () => {
+    console.log("Here will be your executed code");
+    awesomeMethodOnLoad();
+});
+
+eventTarget.addEventListener("event-type", functionThatIsCalled()};
+
+document.addEventListener("click", function(){
+  document.body.style.backgroundColor = "red";
+});
+
+// Arrow Function //
+var funcName = (parameters) => { statements };
+parameters => expression; // function (parameters){return expression;};
+
+-------------------------------------------------------------------------------------
+
+
+// OBJECT //
+const car = {type:"Fiat", model:"500", color:"white"}; 
+Method {
+    The .toString method
+    The .length method
+    The most important date methods
+}
+
+// OBJECT CONSTRUCTOR //
+function Person(first, last, age, eyecolor) {
+    this.firstName = first;
+    this.lastName = last;
+    this.age = age;
+    this.eyeColor = eyecolor;
+}
+
+//Create objects from Constructor through the new() operator
+const myFather = new Person("John", "Doe", 50, "blue");
+const myMother = new Person("Sally", "Rally", 48, "green");
+
+// Add new property to existing Constructor
+Person.prototype.nationality = "English";
+
+//Add new Method to existing Constructor
+Person.prototype.name = function() { 
+return this.firstName + " " + this.lastName;
+};
+
+-------------------------------------------------------------------------------------
+
+// CONDITIONS //
+for (expression 1; expression 2; expression 3) {} 
+    expr1: executed once before loop
+    expr2: condition for executing loop
+    expr3: executed every time after loop
+    z.B.    for (let i = 0; i < 5; i++) {
+                text += "The number is " + i + "<br>";
+            }
+
+// loops through the properties of an Object
+for (variable in object)
+    const numbers = [45, 4, 9, 16, 25];
+    let txt = "";
+    for (let x in numbers) {
+        txt += numbers[x];
+    }
+
+while (condition) {
+    // code block to be executed
+    }
+
+if (condition1) {
+    //  block of code to be executed if condition1 is true
+    } else if (condition2) {
+    //  block of code to be executed if the condition1 is false and condition2 is true
+    } else {
+    //  block of code to be executed if the condition1 is false and condition2 is false
+    }
+
+switch(expression) {
+    case x:
+        // code block
+        break;
+    case y:
+        // code block
+        break;
+    default:
+        // code block
+    } 
+-------------------------------------------------------------------------------------
+
+
+// LINKS //
+MYOA Data Types
+    https://learning.edx.org/course/course-v1:TUMx+MYOAx+2T2023/block-v1:TUMx+MYOAx+2T2023+type@sequential+block@2a8239e14a5e444d8717cb24b5607918/
+    
+MYOA Learning Objectives
+    https://makeyourownapp.github.io/myoa-course-v3/assets/MYOA_Learning-Objectives.pdf
+
+JS Coding Conventions
+    https://www.w3schools.com/js/js_conventions.asp
+    https://youtu.be/j-nNgSYTkX8
+    
+JS Debuggin Tricks
+    https://www.youtube.com/watch?v=_QtUGdaCb1c
+
+CSS Cursor-Propertys
+    http://www.w3schools.com/cssref/pr_class_cursor.asp
+
+CSS Flex-Box 
+    https://css-tricks.com/wp-content/uploads/2022/02/css-flexbox-poster.png
+    https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+    https://css-tricks.com/almanac/properties/f/flex/
+
+JS Objects
+    https://www.w3schools.com/js/js_objects.asp
+    https://youtu.be/oSs_25dmxOE
+
+Icons FontAwesome
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    https://fontawesome.com/docs/web/add-icons/how-to
+    https://fontawesome.com/search?o=r&m=free
+
+HTML DOM Style Object
+    https://www.w3schools.com/jsref/dom_obj_style.asp
+
+Conditional (ternary) operator (condition ? exprIfTrue : exprIfFalse)
+    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_operator
+
+Constructor Patterns
+    http://www.samselikoff.com/blog/some-Javascript-constructor-patterns/
+Link end
+
+
+
+
+
+
+
+
+
+
+
+
+
+<button onclick="this.innerHTML = 'This is the button that was clicked';">Click me</button>
+
+
+<!DOCTYPE html>
+<html>
+    <style>
+        input[type=text],  input[type=password], input[type=date],select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type=submit] {
+            width: 100%;
+            background-color: green;
+            color: white;
+            padding: 14px 20px;
+            margin: 10px 0;
+        }
+    </style>
+    <body>
+        <h3>Dummy registration page</h3>
+        <form action="" id="formId" style>
+        <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstname" placeholder="Your name..">
+        <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastname" placeholder="Your last name..">
+        <label for="date">Birthday</label>
+            <input type="date"  id="date">
+        <label for="gender">Gender</label>
+            <select id="gender">
+                <option value="option1">Female</option>
+                <option value="option2">Male</option>
+                <option value="option3">Other</option>
+            </select>
+        <label for="password">Password</label>
+            <input type="password" id="password" name="Password" placeholder="******"><br>	
+            <input type="checkbox" id="Checkbox">Accept some terms<br>
+            <input type="submit" value="Register" onclick="submitFunction()">
+        </form> 
+        <p id="demo"></p>      
+    </body>
+</html>
+
+function submitFunction() {
+    alert('The account for '+$('#firstName').val() + ' ' +$('#lastName').val()+ ' has been created!');
+    // Look at the bottom of the preview to see the second variant to display the created account
+    $('#demo').text('The account for '+$('#firstName').val() + ' ' +$('#lastName').val()+ ' has been created!');
+}
+
+
