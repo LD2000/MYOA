@@ -69,6 +69,8 @@ document.getElementById('id_name').value;
 
 
 // STYLE //
+tag name {property: value;}
+
 color: white;
 background-color: #45B29D;
 background-color: rgb(50, 50, 50);
@@ -145,7 +147,6 @@ center some text and not a whole element --> text-align: center;
 vertically center content within element with no height -->padding: 5px 0px;
 
 
-
 -------------------------------------------------------------------------------------
 
 // JAVA SCRIPT BASICS //
@@ -166,12 +167,17 @@ document.getElementById('id') ......
 document.querySelector('Selector|.class|#id') .....
 .style.display = 'none';"
 
+// ARRAY //
+var arrayName = ["element1", "element2", "element3"];
+var firstElement = arrayName[0];
+
 // IN + EXTERNAL JS //
 onclick="updateWeatherHtml()" 
 --> function updateWeatherHtml () {
 	document.getElementById("temperature").innerHTML = '8 °C';
 }
 <script src="js/main.js"></script>
+
 
 ///////////// EXAMPLES /////////////////
 function changeDay(day) {

@@ -15,7 +15,7 @@
     </head>
 
 <!-- BODY -->
-    <body>
+    <body onload="init()">
 
     <!-- Section: channel-area -->
         <section id="channel-area">
@@ -28,8 +28,8 @@
         <!-- channel-List -->
             <div id="channel-list-area">
                 <h2>Favorites</h2> 
-                <ul class="channel-list">                
-                    <li id="channel1" onclick="switchChannel(channel1)" class="selected">
+                <ul id="favorite-channels" class="channel-list">                
+                    <!-- <li id="channel1" onclick="switchChannel(channel1)" class="selected">
                         <i class="material-icons">group</i>
                         <span class="channel-name"> MeetUP </span>
                         <span class="timestamp"> 11:51 </span> 
@@ -38,11 +38,11 @@
                         <i class="material-icons">group</i>
                         <span class="channel-name"> Oktoberfest </span> 
                         <span class="timestamp"> 10:51 </span>
-                    </li>         
+                    </li>          -->
                 </ul>
                 <h2>Regular</h2>
-                <ul class="channel-list"> 
-                    <li id="channel3" onclick="switchChannel(channel3)">
+                <ul id="regular-channels" class="channel-list"> 
+                    <!-- <li id="channel3" onclick="switchChannel(channel3)">
                         <i class="material-icons">group</i>
                         <span class="channel-name"> WeatherChannel </span>
                         <span class="timestamp"> Yesterday </span> 
@@ -51,7 +51,7 @@
                         <i class="material-icons">group</i>
                         <span class="channel-name"> SevenContinents </span> 
                         <span class="timestamp"> 23th May 2018 </span>
-                    </li>         
+                    </li>          -->
                 </ul>
             </div>
         </section>
@@ -59,14 +59,14 @@
     <!-- Section: chat-area -->   
         <section id="chat-area">
         <!-- Headbar -->
-            <div class="headbar">
-                <h1 id="channelName">MeetUP</h1>
-                <!-- <button type="button">Favorite</button> -->
-                <a id="favorite-button" class="material-icons">favorite</a>
+            <div class="headbar" id="chat-area-header">
+                <h1></h1>
+                <a id="favorite-button" class="material-icons button"></a>
             </div>
         <!-- message-area -->
             <div id="message-area">
-                <div class="message in-message">
+                <p id="select-channel">Select a channel to start messaging.</p>
+                <!-- <div class="message in-message">
                     <div class="message-wrapper"> 
                         <a class="material-icons">account_circle</a>
                         <div class="message-content">
@@ -156,11 +156,11 @@
                         <a class="material-icons">account_circle</a>
                     </div>
                     <div class="message-time">11:51</div>
-                </div>
+                </div> -->
             </div>
         <!-- send-area -->
             <div id="input-area">
-                <i class="material-icons" id="emoticon-button">insert_emoticon</i>
+                <a class="material-icons button" id="emoticon-button">insert_emoticon</a>
                 <input
                   type="text"
                   id="message-input"
@@ -169,13 +169,21 @@
                   maxlength="500"
                   placeholder="... write your message"
                 />
-                <a class="material-icons button" id="send-button" onclick="sendMessage()">send</a>
+                <a class="material-icons button" id="send-button">send</a> 
+              </div>
+              <div id="emoji-area">
+                <div id="emoji-header">
+                  <span>Emojis</span>
+                  <a class="material-icons button" id="close-emoticon-button">cancel</a>
+                </div>
+                <div id="emoji-list"></div>
               </div>
         </section> 
     
     <!-- JavaScript link -->
         <script src="js/main.js"></script>
         <script src="js/channels.js"></script>
+        <script src="js/messages.js"></script>
     </body>
 
 
